@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Slider</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<!-- Style sheets -->
+	<link rel="stylesheet" href="../build/css/main.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="wrapper"><!-- page wrapper start -->
+		<header class="wrapper__header">
+			<h1 class="wrapper__header__h1">Slider</h1>
+			<h4 class="wrapper__header__h4">Commonly used sliders.</h4>
+		</header>
+
+		<section>
+			<article class="sec__article">
+				<h3 class="sec__article__h3">Basic</h3>
+				<div class="sec__article__ele">
+					<div class="slider">
+						<input type="radio" name="coins" id="slide1" class="slider__radio" checked>
+						<input type="radio" name="coins" id="slide2" class="slider__radio">
+						<input type="radio" name="coins" id="slide3" class="slider__radio">
+
+						<div class="slider__content">
+							<div class="slider__content__box img1"><img src="../build/images/ca-img1.jpg"></div>
+							<div class="slider__content__box img2"><img src="../build/images/ca-img2.jpg"></div>
+							<div class="slider__content__box img3"><img src="../build/images/ca-img3.jpg"></div>
+						</div>
+
+						<div class="slider__labels">
+							<label for="slide1" class="slider__labels__btn img1-label"></label>
+							<label for="slide2" class="slider__labels__btn img2-label"></label>
+							<label for="slide3" class="slider__labels__btn img3-label"></label>
+						</div>
+					</div>
+				</div>
+				<input type="button" name="markup" id="markup" value="Show markup" class="btn-markup">
+				<figure class="markup" id="markupCont">
+					<pre><code>
+<b>&lt;div</b> class="<g>slider</g>"<b>&gt;</b>
+	<b>&lt;input</b> type="<g>radio</g>" name="<g>coins</g>" id="<g>slide1</g>" class="<g>slider__radio</g>" checked>
+	<b>&lt;input</b> type="<g>radio</g>" name="<g>coins</g>" id="<g>slide2</g>" class="<g>slider__radio</g>"<b>&gt;</b>
+	<b>&lt;input</b> type="<g>radio</g>" name="<g>coins</g>" id="<g>slide3</g>" class="<g>slider__radio</g>"<b>&gt;</b>
+
+	<b>&lt;div</b> class="<g>slider__content</g>"<b>&gt;</b>
+		<b>&lt;div</b> class="<g>slider__content__box img1</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/ca-img1.jpg</g>"<b>&gt;</b><b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>slider__content__box img2</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/ca-img2.jpg</g>"<b>&gt;</b><b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>slider__content__box img3</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/ca-img3.jpg</g>"<b>&gt;</b><b>&lt;/div&gt;</b>
+	<b>&lt;/div&gt;</b>
+
+	<b>&lt;div</b> class="<g>slider__labels</g>"<b>&gt;</b>
+		<b>&lt;label</b> for="<g>slide1</g>" class="<g>slider__labels__btn img1-label</g>"<b>&gt;</b><b>&lt;/label&gt;</b>
+		<b>&lt;label</b> for="<g>slide2</g>" class="<g>slider__labels__btn img2-label</g>"<b>&gt;</b><b>&lt;/label&gt;</b>
+		<b>&lt;label</b> for="<g>slide3</g>" class="<g>slider__labels__btn img3-label</g>"<b>&gt;</b><b>&lt;/label&gt;</b>
+	<b>&lt;/div&gt;</b>
+<b>&lt;/div&gt;</b>
+					</code></pre>
+				</figure>
+				<hr class="sec__article__hr">
+			</article>
+
+			<article class="sec__article">
+				<h3 class="sec__article__h3">With Thumbnails</h3>
+				<div class="sec__article__ele">
+					<div class="thumbnail-slider">
+						<input type="radio" name="thumbnail-coins" id="thumbnail-slide1" class="thumbnail-slider__radio" checked>
+						<input type="radio" name="thumbnail-coins" id="thumbnail-slide2" class="thumbnail-slider__radio">
+						<input type="radio" name="thumbnail-coins" id="thumbnail-slide3" class="thumbnail-slider__radio">
+
+						<div class="thumbnail-slider__content">
+							<div class="thumbnail-slider__content__box img1"><img src="../build/images/ca-img1.jpg"></div>
+							<div class="thumbnail-slider__content__box img2"><img src="../build/images/ca-img2.jpg"></div>
+							<div class="thumbnail-slider__content__box img3"><img src="../build/images/ca-img3.jpg"></div>
+						</div>
+
+						<div class="thumbnail-slider__labels">
+							<label for="thumbnail-slide1" class="thumbnail-slider__labels__btn img1-label"><img src="../build/images/thumb-ca-img1.jpg"></label>
+							<label for="thumbnail-slide2" class="thumbnail-slider__labels__btn img2-label"><img src="../build/images/thumb-ca-img2.jpg"></label>
+							<label for="thumbnail-slide3" class="thumbnail-slider__labels__btn img3-label"><img src="../build/images/thumb-ca-img3.jpg"></label>
+						</div>
+					</div>
+				</div>
+				<input type="button" name="markup" id="markup" value="Show markup" class="btn-markup">
+				<figure class="markup" id="markupCont">
+					<pre><code>
+<b>&lt;div</b> class="<g>thumbnail-slider</g>"<b>&gt;</b>
+	<b>&lt;input</b> type="<g>radio</g>" name="<g>thumbnail-coins</g>" id="<g>thumbnail-slide1</g>" class="<g>thumbnail-slider__radio</g>" checked>
+	<b>&lt;input</b> type="<g>radio</g>" name="<g>thumbnail-coins</g>" id="<g>thumbnail-slide2</g>" class="<g>thumbnail-slider__radio</g>"<b>&gt;</b>
+	<b>&lt;input</b> type="<g>radio</g>" name="<g>thumbnail-coins</g>" id="<g>thumbnail-slide3</g>" class="<g>thumbnail-slider__radio</g>"<b>&gt;</b>
+
+	<b>&lt;div</b> class="<g>thumbnail-slider__content</g>"<b>&gt;</b>
+		<b>&lt;label</b> for="<g>thumbnail-slide1</g>" class="<g>thumbnail-slider__labels__btn img1-label</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/thumb-ca-img1.jpg</g>"><b>&lt;/label&gt;</b>
+		<b>&lt;label</b> for="<g>thumbnail-slide2</g>" class="<g>thumbnail-slider__labels__btn img2-label</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/thumb-ca-img2.jpg</g>"><b>&lt;/label&gt;</b>
+		<b>&lt;label</b> for="<g>thumbnail-slide3</g>" class="<g>thumbnail-slider__labels__btn img3-label</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/thumb-ca-img3.jpg</g>"><b>&lt;/label&gt;</b>
+	<b>&lt;/div&gt;</b>
+
+	<b>&lt;div</b> class="<g>thumbnail-slider__labels</g>"<b>&gt;</b>
+		<b>&lt;label</b> for="<g>thumbnail-slide1</g>" class="<g>thumbnail-slider__labels__btn img1-label</g>"<b>&gt;</b><b>&lt;/label&gt;</b>
+		<b>&lt;label</b> for="<g>thumbnail-slide2</g>" class="<g>thumbnail-slider__labels__btn img2-label</g>"<b>&gt;</b><b>&lt;/label&gt;</b>
+		<b>&lt;label</b> for="<g>thumbnail-slide3</g>" class="<g>thumbnail-slider__labels__btn img3-label</g>"<b>&gt;</b><b>&lt;/label&gt;</b>
+	<b>&lt;/div&gt;</b>
+<b>&lt;/div&gt;</b>
+					</code></pre>
+				</figure>
+				<hr class="sec__article__hr">
+			</article>
+
+			<article class="sec__article">
+				<h3 class="sec__article__h3">Animated</h3>
+				<div class="sec__article__ele">
+					<ul class="animated-slider">
+
+						<input type="radio" name="radio-btn" id="img-1" class="animated-slider__radio" checked>
+						<li class="animated-slider__container">
+							<div class="animated-slider__container__slide">
+								<img src="../build/images/ca-img1.jpg" class="animated-slider__img">
+							</div>
+							<div class="nav">
+								<label for="img-3" class="nav__label prev"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></label>
+								<label for="img-2" class="nav__label next"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+							</div>
+						</li>
+
+						<input type="radio" name="radio-btn" id="img-2" class="animated-slider__radio">
+						<li class="animated-slider__container">
+							<div class="animated-slider__container__slide">
+								<img src="../build/images/ca-img2.jpg">
+							</div>
+							<div class="nav">
+								<label for="img-1" class="nav__label prev"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></label>
+								<label for="img-3" class="nav__label next"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+							</div>
+						</li>
+
+						<input type="radio" name="radio-btn" id="img-3" class="animated-slider__radio">
+						<li class="animated-slider__container">
+							<div class="animated-slider__container__slide">
+								<img src="../build/images/ca-img3.jpg">
+							</div>
+							<div class="nav">
+								<label for="img-2" class="nav__label prev"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></label>
+								<label for="img-1" class="nav__label next"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></label>
+							</div>
+						</li>
+
+						<li class="animated-slider__labels">
+							<label for="img-1" class="animated-slider__labels__dot" id="img-dot-1"></label>
+							<label for="img-2" class="animated-slider__labels__dot" id="img-dot-2"></label>
+							<label for="img-3" class="animated-slider__labels__dot" id="img-dot-3"></label>
+						</li>
+					</ul>
+				</div>
+				<input type="button" name="markup" id="markup" value="Show markup" class="btn-markup">
+				<figure class="markup" id="markupCont">
+					<pre><code>
+<b>&lt;ul</b> class="<g>animated-slider</g>"<b>&gt;</b>
+	<b>&lt;input</b> type="<g>radio</g>" name="<g>radio-btn</g>" id="<g>img-1</g>" class="<g>animated-slider__radio</g>" checked<b>&gt;</b>
+	<b>&lt;li</b> class="<g>animated-slider__container</g>"<b>&gt;</b>
+		<b>&lt;div</b> class="<g>animated-slider__container__slide</g>"<b>&gt;</b>
+			<b>&lt;img</b> src="<g>../images/ca-img1.jpg</g>" class="<g>animated-slider__img</g>"<b>&gt;</b>
+		<b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>nav</g>"<b>&gt;</b>
+			<b>&lt;label</b> for="<g>img-3</g>" class="<g>nav__label prev</g>"<b>&gt;</b><b>&lt;i</b> class="<g>fa fa-arrow-circle-left</g>" aria-hidden="<g>true</g>"<b>&gt;</b><b>&lt;/i&gt;</b><b>&lt;/label&gt;</b>
+			<b>&lt;label</b> for="<g>img-2</g>" class="<g>nav__label next</g>"<b>&gt;</b><b>&lt;i</b> class="<g>fa fa-arrow-circle-right</g>" aria-hidden="<g>true</g>"<b>&gt;</b><b>&lt;/i&gt;</b><b>&lt;/label&gt;</b>
+		<b>&lt;/div&gt;</b>
+	<b>&lt;/li&gt;</b>
+
+	<b>&lt;input</b> type="<g>radio</g>" name="<g>radio-btn</g>" id="<g>img-2</g>" class="<g>animated-slider__radio</g>"<b>&gt;</b>
+	<b>&lt;li</b> class="<g>animated-slider__container</g>"<b>&gt;</b>
+		<b>&lt;div</b> class="<g>animated-slider__container__slide</g>"<b>&gt;</b>
+			<b>&lt;img</b> src="<g>../images/ca-img2.jpg</g>"<b>&gt;</b>
+		<b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>nav</g>"<b>&gt;</b>
+			<b>&lt;label</b> for="<g>img-1</g>" class="<g>nav__label prev</g>"<b>&gt;</b><b>&lt;i</b> class="<g>fa fa-arrow-circle-left</g>" aria-hidden="<g>true</g>"<b>&gt;</b><b>&lt;/i&gt;</b><b>&lt;/label&gt;</b>
+			<b>&lt;label</b> for="<g>img-3</g>" class="<g>nav__label next</g>"<b>&gt;</b><b>&lt;i</b> class="<g>fa fa-arrow-circle-right</g>" aria-hidden="<g>true</g>"<b>&gt;</b><b>&lt;/i&gt;</b><b>&lt;/label&gt;</b>
+		<b>&lt;/div&gt;</b>
+	<b>&lt;/li&gt;</b>
+
+	<b>&lt;input</b> type="<g>radio</g>" name="<g>radio-btn</g>" id="<g>img-3</g>" class="<g>animated-slider__radio</g>"<b>&gt;</b>
+	<b>&lt;li</b> class="<g>animated-slider__container</g>"<b>&gt;</b>
+		<b>&lt;div</b> class="<g>animated-slider__container__slide</g>"<b>&gt;</b>
+			<b>&lt;img</b> src="<g>../images/ca-img3.jpg</g>"<b>&gt;</b>
+		<b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>nav</g>"<b>&gt;</b>
+			<b>&lt;label</b> for="<g>img-2</g>" class="<g>nav__label prev</g>"<b>&gt;</b><b>&lt;i</b> class="<g>fa fa-arrow-circle-left</g>" aria-hidden="<g>true</g>"<b>&gt;</b><b>&lt;/i&gt;</b><b>&lt;/label&gt;</b>
+			<b>&lt;label</b> for="<g>img-1</g>" class="<g>nav__label next</g>"<b>&gt;</b><b>&lt;i</b> class="<g>fa fa-arrow-circle-right</g>" aria-hidden="<g>true</g>"<b>&gt;</b><b>&lt;/i&gt;</b><b>&lt;/label&gt;</b>
+		<b>&lt;/div&gt;</b>
+	<b>&lt;/li&gt;</b>
+
+	<b>&lt;li</b> class="<g>animated-slider__labels</g>"<b>&gt;</b>
+		<b>&lt;label</b> for="<g>img-1</g>" class="<g>animated-slider__labels__dot</g>" id="<g>img-dot-1</g>"<b>&gt;</b><b>&lt;/label&gt;</b>
+		<b>&lt;label</b> for="<g>img-2</g>" class="<g>animated-slider__labels__dot</g>" id="<g>img-dot-2</g>"<b>&gt;</b><b>&lt;/label&gt;</b>
+		<b>&lt;label</b> for="<g>img-3</g>" class="<g>animated-slider__labels__dot</g>" id="<g>img-dot-3</g>"<b>&gt;</b><b>&lt;/label&gt;</b>
+	<b>&lt;/li&gt;</b>
+<b>&lt;/ul&gt;</b>
+					</code></pre>
+				</figure>
+				<hr class="sec__article__hr">
+			</article>
+
+		</section>		
+	</div><!-- page wrapper end -->
+	<script type="text/javascript" src="../build/js/main.js"></script></body>
+</html>

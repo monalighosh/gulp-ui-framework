@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Tabs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<!-- Style sheets -->
+	<link rel="stylesheet" href="../build/css/main.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="wrapper"><!-- page wrapper start -->
+		<header class="wrapper__header">
+			<h1 class="wrapper__header__h1">Tabs</h1>
+			<h4 class="wrapper__header__h4">Commonly used tabs.</h4>
+		</header>
+
+		<section>
+			<article class="sec__article">
+				<h3 class="sec__article__h3">Horizontal</h3>
+				<div class="sec__article__ele">
+					<div class="tabs">
+						<input type="radio" id="tab1" name="tabs" class="tabs__radio" checked>
+						<label for="tab1" class="tabs__label">First Tab</label>
+						<div class="tabs__panel" id="panel1">
+							<div class="tabs__panel__img"><img src="../build/images/img1.jpg"></div>
+							<div class="tabs__panel__txt">
+								<h3 class="tabs__panel__txt__h3">Heading 1</h3>
+								<p class="tabs__panel__txt__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum. </p>
+								<button type="button" class="button button--shadow-blue">Read More</button>
+							</div>
+						</div>
+
+						<input type="radio" id="tab2" name="tabs" class="tabs__radio">
+						<label for="tab2" class="tabs__label">Second Tab</label>
+						<div class="tabs__panel" id="panel2">
+							<div class="tabs__panel__img"><img src="../build/images/img2.jpg"></div>
+							<div class="tabs__panel__txt">
+								<h3 class="tabs__panel__txt__h3">Heading 2</h3>
+								<p class="tabs__panel__txt__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum.</p>
+								<button type="button" class="button button--shadow-blue">Read More</button>
+							</div>
+						</div>
+
+						<input type="radio" id="tab3" name="tabs" class="tabs__radio">
+						<label for="tab3" class="tabs__label">Third Tab</label>
+
+						<div class="tabs__panel" id="panel3">
+							<div class="tabs__panel__img"><img src="../build/images/img3.jpg"></div>
+							<div class="tabs__panel__txt">
+								<h3 class="tabs__panel__txt__h3">Heading 3</h3>
+								<p class="tabs__panel__txt__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum.</p>
+								<button type="button" class="button button--shadow-blue">Read More</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<input type="button" name="markup" id="markup" value="Show markup" class="btn-markup">
+				<figure class="markup" id="markupCont">
+					<pre><code>
+<b>&lt;div</b> class="<g>tabs</g>"<b>&gt;</b>
+	<b>&lt;input</b> type="<g>radio</g>" id="<g>tab1</g>" name="<g>tabs</g>" class="<g>tabs__radio</g>" checked>
+	<b>&lt;label</b> for="<g>tab1</g>" class="<g>tabs__label</g>"<b>&gt;</b>First Tab<b>&lt;/label&gt;</b>
+	<b>&lt;div</b> class="<g>tabs__panel</g>" id="<g>panel1</g>"<b>&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__img</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/img1.jpg</g>"<b>&gt;</b><b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__txt</g>"<b>&gt;</b>
+			<b>&lt;h3</b> class="<g>tabs__panel__txt__h3</g>"<b>&gt;</b>Heading 1<b>&lt;/h3&gt;</b>
+			<b>&lt;p</b> class="<g>tabs__panel__txt__para</g>"<b>&gt;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum.<b>&lt;/p&gt;</b>
+			<b>&lt;button</b> type="<g>button</g>" class="<g>button button--shadow-blue</g>"<b>&gt;</b>Read More<b>&lt;/button&gt;</b>
+		<b>&lt;/div&gt;</b>
+	<b>&lt;/div&gt;</b>
+
+	<b>&lt;input</b> type="<g>radio</g>" id="<g>tab2</g>" name="<g>tabs</g>" class="<g>tabs__radio</g>"<b>&gt;</b>
+	<b>&lt;label</b> for="<g>tab2</g>" class="<g>tabs__label</g>"<b>&gt;</b>Second Tab<b>&lt;/label&gt;</b>
+	<b>&lt;div</b> class="<g>tabs__panel</g>" id="<g>panel2</g>"<b>&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__img</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/img2.jpg</g>"<b>&gt;</b><b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__txt</g>"<b>&gt;</b>
+			<b>&lt;h3</b> class="<g>tabs__panel__txt__h3</g>"<b>&gt;</b>Heading 2<b>&lt;/h3&gt;</b>
+			<b>&lt;p</b> class="<g>tabs__panel__txt__para</g>"<b>&gt;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum.<b>&lt;/p&gt;</b>
+			<b>&lt;button</b> type="<g>button</g>" class="<g>button button--shadow-blue</g>"<b>&gt;</b>Read More<b>&lt;/button&gt;</b>
+		<b>&lt;/div&gt;</b>
+	<b>&lt;/div&gt;</b>
+
+	<b>&lt;input</b> type="<g>radio</g>" id="<g>tab3</g>" name="<g>tabs</g>" class="<g>tabs__radio</g>"<b>&gt;</b>
+	<b>&lt;label</b> for="<g>tab3</g>" class="<g>tabs__label</g>"<b>&gt;</b>Third Tab<b>&lt;/label&gt;</b>
+
+	<b>&lt;div</b> class="<g>tabs__panel</g>" id="<g>panel3</g>"<b>&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__img</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/img3.jpg</g>"<b>&gt;</b><b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__txt</g>"<b>&gt;</b>
+			<b>&lt;h3</b> class="<g>tabs__panel__txt__h3</g>"<b>&gt;</b>Heading 3<b>&lt;/h3&gt;</b>
+			<b>&lt;p</b> class="<g>tabs__panel__txt__para</g>"<b>&gt;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum.<b>&lt;/p&gt;</b>
+			<b>&lt;button</b> type="<g>button</g>" class="<g>button button--shadow-blue</g>"<b>&gt;</b>Read More<b>&lt;/button&gt;</b>
+		<b>&lt;/div&gt;</b>
+	<b>&lt;/div&gt;</b>
+<b>&lt;/div&gt;</b>
+					</code></pre>
+				</figure>
+				<hr class="sec__article__hr">
+			</article>
+			
+			<article class="sec__article">
+				<h3 class="sec__article__h3">Vertical</h3>
+				<div class="sec__article__ele">
+					<div class="tabs-ver">
+						<input type="radio" id="tabs-ver1" name="tabs-ver" class="tabs__radio" checked>
+						<label for="tabs-ver1" class="tabs__label tabs-ver__label">First Tab</label>
+						<div class="tabs-ver__panel" id="panel1">
+							<div class="tabs__panel__img"><img src="../build/images/img1.jpg"></div>
+							<div class="tabs__panel__txt">
+								<h3 class="tabs__panel__txt__h3">Heading 1</h3>
+								<p class="tabs__panel__txt__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum. </p>
+								<button type="button" class="button button--shadow-blue">Read More</button>
+							</div>
+						</div>
+
+						<input type="radio" id="tabs-ver2" name="tabs-ver" class="tabs__radio">
+						<label for="tabs-ver2" class="tabs__label tabs-ver__label">Second Tab</label>
+						<div class="tabs-ver__panel" id="panel1">
+							<div class="tabs__panel__img"><img src="../build/images/img2.jpg"></div>
+							<div class="tabs__panel__txt">
+								<h3 class="tabs__panel__txt__h3">Heading 2</h3>
+								<p class="tabs__panel__txt__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum. </p>
+								<button type="button" class="button button--shadow-blue">Read More</button>
+							</div>
+						</div>
+						
+
+						<input type="radio" id="tabs-ver3" name="tabs-ver" class="tabs__radio">
+						<label for="tabs-ver3" class="tabs__label tabs-ver__label">Third Tab</label>
+						<div class="tabs-ver__panel" id="panel1">
+							<div class="tabs__panel__img"><img src="../build/images/img3.jpg"></div>
+							<div class="tabs__panel__txt">
+								<h3 class="tabs__panel__txt__h3">Heading 3</h3>
+								<p class="tabs__panel__txt__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum. </p>
+								<button type="button" class="button button--shadow-blue">Read More</button>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<input type="button" name="markup" id="markup" value="Show markup" class="btn-markup">
+				<figure class="markup" id="markupCont">
+					<pre><code>
+
+<b>&lt;div</b> class="<g>tabs-ver</g>"<b>&gt;</b>
+	<b>&lt;input</b> type="<g>radio</g>" id="<g>tabs-ver1</g>" name="<g>tabs-ver</g>" class="<g>tabs__radio</g>" checked>
+	<b>&lt;label</b> for="<g>tabs-ver1</g>" class="<g>tabs__label tabs-ver__label</g>"<b>&gt;</b>First Tab<b>&lt;/label&gt;</b>
+	<b>&lt;div</b> class="<g>tabs-ver__panel</g>" id="<g>panel1</g>"<b>&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__img</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/img1.jpg</g>"<b>&gt;</b><b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__txt</g>"<b>&gt;</b>
+			<b>&lt;h3</b> class="<g>tabs__panel__txt__h3</g>"<b>&gt;</b>Heading 1<b>&lt;/h3&gt;</b>
+			<b>&lt;p</b> class="<g>tabs__panel__txt__para</g>"<b>&gt;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum.<b>&lt;/p&gt;</b>
+			<b>&lt;button</b> type="<g>button</g>" class="<g>button button--shadow-blue</g>"<b>&gt;</b>Read More<b>&lt;/button&gt;</b>
+		<b>&lt;/div&gt;</b>
+	<b>&lt;/div&gt;</b>
+
+	<b>&lt;input</b> type="<g>radio</g>" id="<g>tabs-ver2</g>" name="<g>tabs-ver</g>" class="<g>tabs__radio</g>"<b>&gt;</b>
+	<b>&lt;label</b> for="<g>tabs-ver2</g>" class="<g>tabs__label tabs-ver__label</g>"<b>&gt;</b>Second Tab<b>&lt;/label&gt;</b>
+	<b>&lt;div</b> class="<g>tabs-ver__panel</g>" id="<g>panel1</g>"<b>&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__img</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/img2.jpg</g>"<b>&gt;</b><b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__txt</g>"<b>&gt;</b>
+			<b>&lt;h3</b> class="<g>tabs__panel__txt__h3</g>"<b>&gt;</b>Heading 2<b>&lt;/h3&gt;</b>
+			<b>&lt;p</b> class="<g>tabs__panel__txt__para</g>"<b>&gt;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum.<b>&lt;/p&gt;</b>
+			<b>&lt;button</b> type="<g>button</g>" class="<g>button button--shadow-blue</g>"<b>&gt;</b>Read More<b>&lt;/button&gt;</b>
+		<b>&lt;/div&gt;</b>
+	<b>&lt;/div&gt;</b>
+
+	<b>&lt;input</b> type="<g>radio</g>" id="<g>tabs-ver3</g>" name="<g>tabs-ver</g>" class="<g>tabs__radio</g>"<b>&gt;</b>
+	<b>&lt;label</b> for="<g>tabs-ver3</g>" class="<g>tabs__label tabs-ver__label</g>"<b>&gt;</b>Third Tab<b>&lt;/label&gt;</b>
+	<b>&lt;div</b> class="<g>tabs-ver__panel</g>" id="<g>panel1</g>"<b>&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__img</g>"<b>&gt;</b><b>&lt;img</b> src="<g>../images/img3.jpg</g>"<b>&gt;</b><b>&lt;/div&gt;</b>
+		<b>&lt;div</b> class="<g>tabs__panel__txt</g>"<b>&gt;</b>
+			<b>&lt;h3</b> class="<g>tabs__panel__txt__h3</g>"<b>&gt;</b>Heading 3<b>&lt;/h3&gt;</b>
+			<b>&lt;p</b> class="<g>tabs__panel__txt__para</g>"<b>&gt;</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis erat eu est euismod iaculis. Nulla consectetur diam sit amet dui condimentum.<b>&lt;/p&gt;</b>
+			<b>&lt;button</b> type="<g>button</g>" class="<g>button button--shadow-blue</g>"<b>&gt;</b>Read More<b>&lt;/button&gt;</b>
+		<b>&lt;/div&gt;</b>
+	<b>&lt;/div&gt;</b>
+<b>&lt;/div&gt;</b>
+					</code></pre>
+				</figure>
+				<hr class="sec__article__hr">
+			</article>
+			
+		</section>		
+	</div><!-- page wrapper end -->
+	<script type="text/javascript" src="../build/js/main.js"></script></body>
+</html>

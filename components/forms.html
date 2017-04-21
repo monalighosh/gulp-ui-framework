@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Forms</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<!-- Style sheets -->
+	<link rel="stylesheet" href="../build/css/main.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="wrapper"><!-- page wrapper start -->
+		<header class="wrapper__header">
+			<h1 class="wrapper__header__h1">Forms</h1>
+			<h4 class="wrapper__header__h4">Commonly used forms.</h4>
+		</header>
+
+		<section>
+			<article class="sec__article">
+				<h3 class="sec__article__h3">Basic</h3>
+				<div class="sec__article__ele">
+					<div class="form">
+						<form id="basic-form" method="post" action="#" class="form__basic">
+
+							<div class="form__basic__wrapper">
+								<span class="form__basic__wrapper--icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+								<input type="text" name="full-name" placeholder="Full Name" class="basic-form__name">
+							</div>
+
+							<div class="form__basic__wrapper">
+								<span class="form__basic__wrapper--icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+								<input type="email" name="email" placeholder="Email" class="basic-form__email">
+							</div>
+
+							<div class="form__basic__wrapper">
+								<span class="form__basic__wrapper--icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+								<input type="password" name="password" placeholder="Password" class="basic-form__password">
+							</div>
+
+							<div class="form__basic__wrapper__dob">
+								<span class="form__basic__wrapper__dob--txt">Birthday</span>
+							</div>
+							
+							<select name="month" class="basic-form__month">
+								<option>MM</option>
+								<option value="january">January</option>
+								<option value="february">February</option>
+								<option value="march">March</option>
+								<option value="april">April</option>
+								<option value="may">May</option>
+								<option value="june">June</option>
+								<option value="july">July</option>
+								<option value="august">August</option>
+								<option value="september">September</option>
+								<option value="october">October</option>
+								<option value="november">November</option>
+								<option value="december">December</option>
+							</select>
+							<select name="date" class="basic-form__date">
+								<option>DD</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							</select>
+							<input type="text" name="year" placeholder="YYYY" maxlength="4" class="basic-form__year">
+							<button type="button" class="button button--shadow-blue form__basic--button">Sign Up</button>
+						</form>
+					</div>
+				</div>
+				<input type="button" name="markup" id="markup" value="Show markup" class="btn-markup">
+				<figure class="markup" id="markupCont">
+					<pre><code>
+<b>&lt;form</b> id="<g>basic-form</g>" method="<g>post</g>" action="<g>#</g>" class="<g>form__basic</g>"<b>&gt;</b>
+
+	<b>&lt;div</b> class="<g>form__basic__wrapper</g>"<b>&gt;</b>
+		<b>&lt;span</b> class="<g>form__basic__wrapper--icon</g>"<b>&gt;&lt;i</b> class="<g>fa fa-user</g>" aria-hidden="<g>true</g>"<b>&gt;&lt;/i&gt;&lt;/span&gt;</b>
+		<b>&lt;input</b> type="<g>text</g>" name="<g>full-name</g>" placeholder="<g>Full Name</g>" class="<g>basic-form__name</g>"<b>&gt;</b>
+	<b>&lt;/div&gt;</b>
+
+	<b>&lt;div</b> class="<g>form__basic__wrapper</g>"<b>&gt;</b>
+		<b>&lt;span</b> class="<g>form__basic__wrapper--icon</g>"<b>&gt;&lt;i</b> class="<g>fa fa-envelope</g>" aria-hidden="<g>true</g>"<b>&gt;&lt;/i&gt;&lt;/span&gt;</b>
+		<b>&lt;input</b> type="<g>email</g>" name="<g>email</g>" placeholder="<g>Email</g>" class="<g>basic-form__email</g>"<b>&gt;</b>
+	<b>&lt;/div&gt;</b>
+
+	<b>&lt;div</b> class="<g>form__basic__wrapper</g>"<b>&gt;</b>
+		<b>&lt;span</b> class="<g>form__basic__wrapper--icon</g>"<b>&gt;&lt;i</b> class="<g>fa fa-lock</g>" aria-hidden="<g>true</g>"<b>&gt;&lt;/i&gt;&lt;/span&gt;</b>
+		<b>&lt;input</b> type="<g>password</g>" name="<g>password</g>" placeholder="<g>Password</g>" class="<g>basic-form__password</g>"<b>&gt;</b>
+	<b>&lt;/div&gt;</b>
+
+	<b>&lt;div</b> class="<g>form__basic__wrapper__dob</g>"<b>&gt;</b>
+		<b>&lt;span</b> class="<g>form__basic__wrapper__dob--txt</g>"<b>&gt;</b>Birthday<b>&lt;/span&gt;</b>
+	<b>&lt;/div&gt;</b>
+
+	<b>&lt;select</b> name="<g>month</g>" class="<g>basic-form__month</g>"<b>&gt;</b>
+		<b>&lt;option&gt;</b>MM<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>january</g>"<b>&gt;</b>January<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>february</g>"<b>&gt;</b>February<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>march</g>"<b>&gt;</b>March<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>april</g>"<b>&gt;</b>April<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>may</g>"<b>&gt;</b>May<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>june</g>"<b>&gt;</b>June<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>july</g>"<b>&gt;</b>July<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>august</g>"<b>&gt;</b>August<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>september</g>"<b>&gt;</b>September<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>october</g>"<b>&gt;</b>October<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>november</g>"<b>&gt;</b>November<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>december</g>"<b>&gt;</b>December<b>&lt;/option&gt;</b>
+	<b>&lt;/select&gt;</b>
+	<b>&lt;select</b> name="<g>date</g>" class="<g>basic-form__date</g>"<b>&gt;</b>
+		<b>&lt;option&gt;</b>DD<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>1</g>"<b>&gt;</b>1<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>2</g>"<b>&gt;</b>2<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>3</g>"<b>&gt;</b>3<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>4</g>"<b>&gt;</b>4<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>5</g>"<b>&gt;</b>5<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>6</g>"<b>&gt;</b>6<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>7</g>"<b>&gt;</b>7<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>8</g>"<b>&gt;</b>8<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>9</g>"<b>&gt;</b>9<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>10</g>"<b>&gt;</b>10<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>11</g>"<b>&gt;</b>11<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>12</g>"<b>&gt;</b>12<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>13</g>"<b>&gt;</b>13<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>14</g>"<b>&gt;</b>14<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>15</g>"<b>&gt;</b>15<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>16</g>"<b>&gt;</b>16<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>17</g>"<b>&gt;</b>17<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>18</g>"<b>&gt;</b>18<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>19</g>"<b>&gt;</b>19<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>20</g>"<b>&gt;</b>20<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>21</g>"<b>&gt;</b>21<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>22</g>"<b>&gt;</b>22<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>23</g>"<b>&gt;</b>23<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>24</g>"<b>&gt;</b>24<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>25</g>"<b>&gt;</b>25<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>26</g>"<b>&gt;</b>26<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>27</g>"<b>&gt;</b>27<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>28</g>"<b>&gt;</b>28<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>29</g>"<b>&gt;</b>29<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>30</g>"<b>&gt;</b>30<b>&lt;/option&gt;</b>
+		<b>&lt;option</b> value="<g>31</g>"<b>&gt;</b>31<b>&lt;/option&gt;</b>
+	<b>&lt;/select&gt;</b>
+	<b>&lt;input</b> type="<g>text</g>" name="<g>year</g>" placeholder="<g>YYYY</g>" maxlength="<g>4</g>" class="<g>basic-form__year</g>"<b>&gt;</b>
+	<b>&lt;button</b> type="<g>button</g>" class="<g>button button--shadow-blue form__basic--button</g>"<b>&gt;</b>Sign Up<b>&lt;/button&gt;</b>
+</form>
+					</code></pre>
+				</figure>
+				<hr class="sec__article__hr">
+			</article>
+			
+			<article class="sec__article">
+				<h3 class="sec__article__h3">Form with Heading</h3>
+				<div class="sec__article__ele">
+					<div class="form">
+						<form id="heading-form" method="post" action="#" class="form__heading">
+							<div class="form__heading__icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+							<h3 class="form__heading__h3">Member Login</h3>
+							<input type="email" name="email" placeholder="Username" class="form__heading__in-email">
+							<input type="password" name="password" placeholder="Password" class="form__heading__in-password">
+							<button type="button" class="button button--shadow-blue form__heading--button">Login</button>
+							<p class="form__heading__para">Forgot Password?</p>
+						</form>
+					</div>
+				</div>
+
+			<input type="button" name="markup" id="markup" value="Show markup" class="btn-markup">
+				<figure class="markup" id="markupCont">
+					<pre><code>
+<b>&lt;form</b> id="<g>heading-form</g>" method="<g>post</g>" action="<g>#</g>" class="<g>form__heading</g>"<b>&gt;</b>
+	<b>&lt;div</b> class="<g>form__heading__icon</g>"<b>&gt;&lt;i</b> class="<g>fa fa-user</g>" aria-hidden="<g>true</g>"<b>&gt;&lt;/i&gt;&lt;/div&gt;</b>
+	<b>&lt;h3</b> class="<g>form__heading__h3</g>"<b>&gt;</b>Member Login<b>&lt;/h3&gt;</b>
+	<b>&lt;input</b> type="<g>email</g>" name="<g>email</g>" placeholder="<g>Username</g>" class="<g>form__heading__in-email</g>"<b>&gt;</b>
+	<b>&lt;input</b> type="<g>password</g>" name="<g>password</g>" placeholder="<g>Password</g>" class="<g>form__heading__in-password</g>"<b>&gt;</b>
+	<b>&lt;button</b> type="<g>button</g>" class="<g>button button--shadow-blue form__basic--button</g>"<b>&gt;</b>Login<b>&lt;/button&gt;</b>
+	<b>&lt;p</b> class="<g>form__heading__para</g>"<b>&gt;</b>Forgot Password?<b>&lt;/p&gt;</b>
+<b>&lt;/form&gt;</b> 
+					</code></pre>
+				</figure>
+				<hr class="sec__article__hr">
+			</article>
+	</section>		
+</div><!-- page wrapper end -->
+<script type="text/javascript" src="../build/js/main.js"></script></body>
+</html>

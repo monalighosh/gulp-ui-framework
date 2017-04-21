@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Image Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<!-- Style sheets -->
+	<link rel="stylesheet" href="stylesheets/main.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="wrapper"><!-- page wrapper start -->
+		<header class="wrapper__header">
+			<h1 class="wrapper__header__h1">Image Gallery</h1>
+			<h4 class="wrapper__header__h4">Innovative image gallery.</h4>
+		</header>
+
+		<section>
+			<article class="sec__article">
+				<div class="sec__article__ele">
+					<div class="gallery">
+						<span class="gallery__title" id="title_yellow-flower">Yellow <span class="gallery--lightTxt" id="title_yellow-flower">Flowers</span></span>
+						<img src="images/yellow-flower.jpg" class="gallery__imgs" id="yellow-flower">
+
+						<span class="gallery__title" id="title_butterfly">Butterfly</span>
+						<img src="images/butterfly.jpg" class="gallery__imgs" id="butterfly">
+
+						<span class="gallery__title" id="title_sweet-slices">Sweet <span class="gallery--lightTxt" id="title_sweet-slices">Slices</span></span>
+						<img src="images/sweet-slices.jpg" class="gallery__imgs" id="sweet-slices">
+
+						<span class="gallery__title" id="title_peppers">Peppers</span>
+						<img src="images/peppers.jpg" class="gallery__imgs" id="peppers">
+
+						<span class="gallery__title" id="title_colorful-umbrellas">Colorful <span class="gallery--lightTxt" id="title_colorful-umbrellas">Umbrellas</span></span>
+						<img src="images/colorful-umbrellas.jpg" class="gallery__imgs" id="colorful-umbrellas">
+
+						<span class="gallery__title" id="title_keys">Keys</span>
+						<img src="images/keys.jpg" class="gallery__imgs" id="keys">
+
+						<span class="gallery__title" id="title_green-fish">Green <span class="gallery--lightTxt" id="title_green-fish">Fish</span></span>
+						<img src="images/green-fish.jpg" class="gallery__imgs" id="green-fish">
+
+						<span class="gallery__title" id="title_apples">Apples</span>
+						<img src="images/apples.jpg" class="gallery__imgs" id="apples">
+
+						<span class="gallery__title" id="title_blue-sky">Blue <span class="gallery--lightTxt" id="title_blue-sky">Sky</span></span>
+						<img src="images/blue-sky.jpg" class="gallery__imgs" id="blue-sky">
+
+						<span class="gallery__title" id="title_chocolates">Chocolates</span>
+						<img src="images/chocolates.jpg" class="gallery__imgs" id="chocolates">
+
+						<span class="gallery__title" id="title_big-city">Big <span class="gallery--lightTxt" id="title_big-city">City</span></span>
+						<img src="images/big-city.jpg" class="gallery__imgs" id="big-city">
+
+						<span class="gallery__title" id="title_vegetables">Vegetables</span>
+						<img src="images/vegetables.jpg" class="gallery__imgs" id="vegetables">
+
+						<span class="gallery__title" id="title_red-leaf">Red <span class="gallery--lightTxt" id="title_red-leaf">Leaf</span></span>
+						<img src="images/red-leaf.jpg" class="gallery__imgs" id="red-leaf">
+
+						<span class="gallery__title" id="title_iphone">Iphone</span>
+						<img src="images/iphone.jpg" class="gallery__imgs" id="iphone">
+
+						<span class="gallery__title" id="title_coffee-beans">Coffee <span class="gallery--lightTxt" id="title_coffee-beans">Beans</span></span>
+						<img src="images/coffee-beans.jpg" class="gallery__imgs" id="coffee-beans">
+					</div>
+				</div>
+				<input type="button" name="markup" id="markup" value="Show markup" class="btn-markup">
+				<figure class="markup" id="markupCont">
+					<pre><code>
+<b>&lt;div</b> class="<g>gallery</g>"<b>&gt;</b>
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_yellow-flower</g>"<b>&gt;</b>Yellow <b>&lt;span</b> class="<g>gallery--lightTxt</g>" id="<g>title_yellow-flower</g>"<b>&gt;</b>Flowers<b>&lt;/span&gt;</b><b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/yellow-flower.jpg</g>" class="<g>gallery__imgs</g>" id="<g>yellow-flower</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_butterfly</g>"<b>&gt;</b>Butterfly<b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/butterfly.jpg</g>" class="<g>gallery__imgs</g>" id="<g>butterfly</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_sweet-slices</g>"<b>&gt;</b>Sweet <b>&lt;span</b> class="<g>gallery--lightTxt</g>" id="<g>title_sweet-slices</g>"<b>&gt;</b>Slices<b>&lt;/span&gt;</b><b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/sweet-slices.jpg</g>" class="<g>gallery__imgs</g>" id="<g>sweet-slices</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_peppers</g>"<b>&gt;</b>Peppers<b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/peppers.jpg</g>" class="<g>gallery__imgs</g>" id="<g>peppers</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_colorful-umbrellas</g>"<b>&gt;</b>Colorful <b>&lt;span</b> class="<g>gallery--lightTxt</g>" id="<g>title_colorful-umbrellas</g>"<b>&gt;</b>Umbrellas<b>&lt;/span&gt;</b><b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/colorful-umbrellas.jpg</g>" class="<g>gallery__imgs</g>" id="<g>colorful-umbrellas</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_keys</g>"<b>&gt;</b>Keys<b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/keys.jpg</g>" class="<g>gallery__imgs</g>" id="<g>keys</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_green-fish</g>"<b>&gt;</b>Green <b>&lt;span</b> class="<g>gallery--lightTxt</g>" id="<g>title_green-fish</g>"<b>&gt;</b>Fish<b>&lt;/span&gt;</b><b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/green-fish.jpg</g>" class="<g>gallery__imgs</g>" id="<g>green-fish</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_apples</g>"<b>&gt;</b>Apples<b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/apples.jpg</g>" class="<g>gallery__imgs</g>" id="<g>apples</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_blue-sky</g>"<b>&gt;</b>Blue <b>&lt;span</b> class="<g>gallery--lightTxt</g>" id="<g>title_blue-sky</g>"<b>&gt;</b>Sky<b>&lt;/span&gt;</b><b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/blue-sky.jpg</g>" class="<g>gallery__imgs</g>" id="<g>blue-sky</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_chocolates</g>"<b>&gt;</b>Chocolates<b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/chocolates.jpg</g>" class="<g>gallery__imgs</g>" id="<g>chocolates</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_big-city</g>"<b>&gt;</b>Big <b>&lt;span</b> class="<g>gallery--lightTxt</g>" id="<g>title_big-city</g>"<b>&gt;</b>City<b>&lt;/span&gt;</b><b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/big-city.jpg</g>" class="<g>gallery__imgs</g>" id="<g>big-city</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_vegetables</g>"<b>&gt;</b>Vegetables<b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/vegetables.jpg</g>" class="<g>gallery__imgs</g>" id="<g>vegetables</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_red-leaf</g>"<b>&gt;</b>Red <b>&lt;span</b> class="<g>gallery--lightTxt</g>" id="<g>title_red-leaf</g>"<b>&gt;</b>Leaf<b>&lt;/span&gt;</b><b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/red-leaf.jpg</g>" class="<g>gallery__imgs</g>" id="<g>red-leaf</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_iphone</g>"<b>&gt;</b>Iphone<b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/iphone.jpg</g>" class="<g>gallery__imgs</g>" id="<g>iphone</g>"<b>&gt;</b>
+
+	<b>&lt;span</b> class="<g>gallery__title</g>" id="<g>title_coffee-beans</g>"<b>&gt;</b>Coffee <b>&lt;span</b> class="<g>gallery--lightTxt</g>" id="<g>title_coffee-beans</g>"<b>&gt;</b>Beans<b>&lt;/span&gt;</b><b>&lt;/span&gt;</b>
+	<b>&lt;img</b> src="<g>../images/coffee-beans.jpg</g>" class="<g>gallery__imgs</g>" id="<g>coffee-beans</g>"<b>&gt;</b>
+<b>&lt;/div&gt;</b>
+					</code></pre>
+				</figure>
+				<hr class="sec__article__hr">
+			</article>
+			
+		</section>		
+	</div><!-- page wrapper end -->
+	<script type="text/javascript" src="javascripts/main.js"></script>
+	<script type="text/javascript" src="javascripts/gallery.js"></script>
+</body>
+</html>
